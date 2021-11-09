@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+.cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 0 2em 0;
+}
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr 4fr 1fr;
+  background-color: #ffffff;
+  background-image: url(../logos/container_bg.png);
+  color: #323333;
+  width: 90%;
+}
+
+.elemento {
+  border-top: 2px solid #323333;
+  text-align: center;
+  font-size: 1rem;
+  padding: 1em;
+}
+
+.linea {
+  text-align: center;
+  border-top: 2px solid #323333;
+}
+
+.imagen {
+  width: 60px;
+  height: 60px;
+}
+.pokenombre {
+  text-transform: capitalize;
+}
+
+#titulos {
+  display: flex;
+  align-items: center;
+}
+#titulos h1 {
+  font-family: "Mochiy Pop P One", sans-serif;
+  color: #ffcb05;
+  text-shadow: -2px 1px 0px rgba(45, 114, 185, 1);
+}
+
+.fila {
+  display: contents;
+}
+
+form {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #870000 0%,
+    #190a05 51%,
+    #870000 100%
+  );
+  padding: 0.5em 1em;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+}
+.btn-grad:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+.fila:hover .linea {
+  background-color: #dd0b2d;
+  color: #dedfda;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+@media (max-width: 600px) {
+  .contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 1fr;
+  }
+}

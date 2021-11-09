@@ -1,0 +1,47 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background-color: #1e1f1e;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+h1 {
+  font-family: "Mochiy Pop P One", sans-serif;
+  color: #ffcb05;
+  text-shadow: -2px 1px 0px rgba(45, 114, 185, 1);
+}
+.cont-pie {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  gap: 1em;
+  width: 30%;
+}
+.cont-pie ol{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.cont-pie img {
+  width: 50%;
+}
+footer a {
+  color: #dd0b2d;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+i {
+  color: #dd0b2d;
+  font-size: 2em;
+}
+@media (max-width:600px) {
+  footer {
+    flex-direction: column;
+  }
+  .cont-pie {
+    width: 100%;
+  }
+}

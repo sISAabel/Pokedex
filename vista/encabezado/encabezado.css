@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+* {
+  font-size: calc(10px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-family: "Flexo-Regular",arial,sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../logos/body_bg.png);
+}
+header {
+  border-radius: 0vw 0vw 2vw 2vw;
+  height: 10vw;
+  width: 100%;
+  background-image: url(../logos/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  position: sticky;
+  top: 0vw;
+  margin: -1.2vw 0vw 1vw 0vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 0vw 1vw 0vw;
+}
+
+#datos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 41vw;
+  font-size: 1.2rem;
+}
+
+#logoEmpresa {
+  display: flex;
+  flex-direction: column;
+}
+
+#logo {
+  width: 20vw;
+}
+
+nav {
+  width: 40vw;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 10vh;
+}
+
+ul li {
+  list-style: none;
+  align-self: center;
+}
+ul li a {
+  color: #ffcb05;
+  text-shadow: -2px 1px 0px rgba(45,114,185,1);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
+@media (max-width: 600px) {
+  .barra {
+    display: none;
+  }
+  #datos {
+    justify-content: center;
+  }
+  header {
+    justify-content: center;
+    height: 15vh;
+  }
+  nav {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  ul {
+    margin: 0;
+    justify-content: space-evenly;
+  }
+}
